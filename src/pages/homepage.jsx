@@ -14,7 +14,6 @@ import {
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import Typewriter from "../components/common/typewriter";
-import { DoodleTriangles, DoodleArrow } from "../components/common/doodles";
 import Article from "../components/homepage/article";
 import Experience from "../components/homepage/experience";
 import Skills from "../components/homepage/skills";
