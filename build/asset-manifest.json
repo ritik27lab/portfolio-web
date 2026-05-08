@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9c46fa8f.css",
+    "main.js": "/static/js/main.dc7ca145.js",
+    "static/js/787.512dd3f2.chunk.js": "/static/js/787.512dd3f2.chunk.js",
+    "static/media/openainews.png": "/static/media/openainews.084457a1cac471127463.png",
+    "static/media/gzm.png": "/static/media/gzm.485f52c904ee82d8cf87.png",
+    "static/media/litools.png": "/static/media/litools.3f9bb8824bbc88190db9.png",
+    "static/media/retirely.png": "/static/media/retirely.4d53ed4ca6c6a212f93c.png",
+    "static/media/wynn.png": "/static/media/wynn.2e4259bf9a29de60e0c7.png",
+    "index.html": "/index.html",
+    "main.9c46fa8f.css.map": "/static/css/main.9c46fa8f.css.map",
+    "main.dc7ca145.js.map": "/static/js/main.dc7ca145.js.map",
+    "787.512dd3f2.chunk.js.map": "/static/js/787.512dd3f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c46fa8f.css",
+    "static/js/main.dc7ca145.js"
+  ]
+}

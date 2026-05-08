@@ -39,8 +39,7 @@ const Projects = () => {
 					</div>
 					<div className="projects-container">
 						<div className="title projects-title">
-							Things I’ve made trying to put my dent in the
-							universe.
+							Things I’ve made
 						</div>
 
 						<div className="subtitle projects-subtitle">

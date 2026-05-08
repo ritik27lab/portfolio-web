@@ -3,52 +3,54 @@
 .homepage-article {
 	width: 90%;
 	mix-blend-mode: normal;
-	border-radius: 20px;
-	opacity: 0.8;
+	border-radius: 16px;
+	border: 1px solid transparent;
+	transition: border-color 0.25s ease, background-color 0.25s ease;
 }
 
 .homepage-article:hover {
-	background: #fafafa;
-	opacity: 1;
-	transition: background-color 0.3s ease-in-out;
+	background-color: var(--bg-card);
+	border-color: var(--border-color);
 }
 
 .homepage-article-content {
-	padding: 30px;
+	padding: 28px;
 }
 
 .homepage-article-date {
-	opacity: 1;
 	color: var(--tertiary-color);
 	font-size: 12px;
 	margin-bottom: 1em;
+	letter-spacing: 0.02em;
 }
 
 .homepage-article-title {
-	opacity: 1;
 	color: var(--primary-color);
-	font-size: 16px;
-	margin-bottom: 1em;
-	font-weight: 700;
+	font-size: 17px;
+	margin-bottom: 0.7em;
+	font-weight: 600;
+	letter-spacing: -0.01em;
 }
 
 .homepage-article-description {
-	opacity: 1;
 	color: var(--secondary-color);
-	font-size: 12px;
-	line-height: 1.5;
+	font-size: 13px;
+	line-height: 1.6;
 }
 
 .homepage-article-link {
-	opacity: 1;
 	padding-top: 20px;
-	font-size: 15px;
-	font-weight: 700;
+	font-size: 14px;
+	font-weight: 600;
 }
 
 .homepage-article-link a {
 	color: var(--link-color);
 	text-decoration: none;
+}
+
+.homepage-article-link a:hover {
+	color: var(--link-hover);
 }
 
 @media (max-width: 600px) {

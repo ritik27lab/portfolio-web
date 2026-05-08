@@ -8,6 +8,27 @@ import Card from "../common/card";
 import "./styles/works.css";
 
 const Works = () => {
+	const items = [
+		{
+			logo: LinkLogo,
+			title: "Linkites",
+			subtitle: "Software Engineer",
+			duration: "2021 - Present",
+		},
+		{
+			logo: StackRacers,
+			title: "Stack Racers",
+			subtitle: "Software Engineer",
+			duration: "2019 - Present",
+		},
+		{
+			logo: Intelion,
+			title: "Intelion Systems",
+			subtitle: "QA Engineer",
+			duration: "Mar 2021 - Sep 2021",
+		},
+	];
+
 	return (
 		<div className="works">
 			<Card
@@ -15,43 +36,26 @@ const Works = () => {
 				title="Work"
 				body={
 					<div className="works-body">
-						<div className="work">
-							<img
-								src={LinkLogo}
-								alt="facebook"
-								className="work-image"
-							/>
-							<div className="work-title">Linkites</div>
-							<div className="work-subtitle">
-								Software Engineer
+						{items.map((item, idx) => (
+							<div className="work" key={idx}>
+								<img
+									src={item.logo}
+									alt={item.title}
+									className="work-image"
+								/>
+								<div className="work-info">
+									<div className="work-title">
+										{item.title}
+									</div>
+									<div className="work-subtitle">
+										{item.subtitle}
+									</div>
+								</div>
+								<div className="work-duration">
+									{item.duration}
+								</div>
 							</div>
-							<div className="work-duration">2021 - Present</div>
-						</div>
-
-						<div className="work">
-							<img
-								src={StackRacers}
-								alt="twitter"
-								className="work-image"
-							/>
-							<div className="work-title">Stack Racers</div>
-							<div className="work-subtitle">
-								Software Engineer
-							</div>
-							<div className="work-duration">2019 - Present</div>
-						</div>
-						<div className="work">
-							<img
-								src={Intelion}
-								alt="twitter"
-								className="work-image"
-							/>
-							<div className="work-title">Intelion Systems</div>
-							<div className="work-subtitle">QA Engineer</div>
-							<div className="work-duration">
-								Mar 2021 - Sep 2021
-							</div>
-						</div>
+						))}
 					</div>
 				}
 			/>

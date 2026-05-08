@@ -1,14 +1,30 @@
 :root {
-	/* ------- colors ------- */
-	--primary-color: #27272a;
-	--secondary-color: #65656d;
-	--tertiary-color: #acacb4;
-	--quaternary-color: #e4e4e7;
+	/* ------- colors (dark theme) ------- */
+	--bg-color: #0a0a0a;
+	--bg-elevated: #111113;
+	--bg-card: #141417;
+	--bg-card-hover: #1a1a1f;
+
+	--primary-color: #fafafa;
+	--secondary-color: #a1a1aa;
+	--tertiary-color: #71717a;
+	--quaternary-color: #27272a;
+	--border-color: #27272a;
+	--border-subtle: #1f1f23;
+
 	--link-color: #14b8a6;
-	/* ---------------------- */
+	--link-hover: #2dd4bf;
+	--accent-glow: rgba(20, 184, 166, 0.15);
+	/* ----------------------------------- */
 
 	/* ------- fonts ------- */
-	--primary-font: "Heebo", sans-serif;
-	--secondary-font: "Roboto", sans-serif;
+	--primary-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		sans-serif;
+	--secondary-font: "Inter Tight", "Inter", -apple-system, sans-serif;
 	/* --------------------- */
+}
+
+html, body {
+	background-color: var(--bg-color);
+	color: var(--primary-color);
 }
