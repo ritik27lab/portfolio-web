@@ -14,14 +14,12 @@ import {
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import Typewriter from "../components/common/typewriter";
-import Article from "../components/homepage/article";
 import Experience from "../components/homepage/experience";
 import Skills from "../components/homepage/skills";
 import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
 

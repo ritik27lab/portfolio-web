@@ -5,7 +5,6 @@ import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
 import NavBar from "../components/common/navBar";
-import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 
 import INFO from "../data/user";
@@ -59,7 +58,7 @@ const Resume = () => {
 
 						<div className="resume-container">
 							<div className="resume-header">
-								<h1 className="resume-title"></h1>
+								{/* <h1 className="resume-title"></h1> */}
 								<a
 									href={resumePDF}
 									download="Rithik-Resume@8319041599.pdf"
