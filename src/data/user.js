@@ -12,7 +12,7 @@ const INFO = {
 		twitter: "https://twitter.com/RitikRakhi",
 		github: "https://github.com/ritik27lab",
 		linkedin: "https://linkedin.com/in/ritikbhalekar27",
-		instagram: "https://instagram.com/_.hrithik404._",
+		instagram: "https://www.instagram.com/rithik_404/",
 		// stackoverflow: "https://stackoverflow.com/",
 		facebook: "https://facebook.com/",
 	},
@@ -70,51 +70,42 @@ const INFO = {
 	},
 
 	experience: [
-		{
-			company: "Linkites",
-			role: "Software Engineer",
-			duration: "2021 — Present",
-			location: "Remote",
-			description:
-				"Leading development of scalable mobile and web applications. Architecting full-stack features, mentoring engineers, and partnering with product to ship reliable releases.",
-			stack: ["React Native", "React", "Node.js", "TypeScript", "AWS"],
-		},
-		{
-			company: "Stack Racers",
-			role: "Software Engineer",
-			duration: "2019 — Present",
-			location: "Remote",
-			description:
-				"Building cross-platform applications and internal tooling. Owning frontend architecture and driving developer-experience improvements.",
-			stack: ["React", "Next.js", "Node.js", "GraphQL"],
-		},
-		{
-			company: "Intelion Systems",
-			role: "QA Engineer",
-			duration: "Mar 2021 — Sep 2021",
-			location: "India",
-			description:
-				"Designed and executed test plans across web and mobile products. Built automation suites to catch regressions earlier in the release cycle.",
-			stack: ["Selenium", "Postman", "Jest"],
-		},
-		{
-			company: "Add a fourth role",
-			role: "Your title",
-			duration: "Year — Year",
-			location: "Location",
-			description:
-				"Replace this placeholder with a recent achievement, the scope you owned, or a measurable outcome you delivered.",
-			stack: ["Tech", "Tech", "Tech"],
-		},
-		{
-			company: "Add a fifth role",
-			role: "Your title",
-			duration: "Year — Year",
-			location: "Location",
-			description:
-				"Replace this placeholder. Lead with the impact, then the responsibility, then the team or domain.",
-			stack: ["Tech", "Tech"],
-		},
+	{
+    company: "Syba",
+    role: "Technical Lead",
+    duration: "Oct 2024 — Present",
+    location: "Brussels, Belgium (Remote)",
+    description:
+        "Led full-stack development of a cross-platform mobile application including an Electron-based macOS app. Integrated Stripe payments with webhooks to PostgreSQL. Built scalable backend services with Node.js and Express.js deployed on Microsoft Azure with Clusters and Load Balancers. Managed Apple compliance through provisioning, code signing, and TestFlight/App Store notarization. Integrated native features like DNS connectivity and real-time network discovery. Defined CI/CD pipelines and mentored junior developers.",
+    stack: ["React Native", "Electron", "Node.js", "Express.js", "PostgreSQL", "Azure", "Stripe"],
+},
+{
+    company: "Multeway - Around Me Social Media App",
+    role: "Full Stack Developer",
+    duration: "Jan 2023 — Oct 2024",
+    location: "Hyderabad, India",
+    description:
+        "Spearheaded development of a social platform using React Native with features like a Shoutouts Heat-Map (MapBox) and an AI Chatbot. Built scalable APIs using FastAPI, PostgreSQL, and Redis. Integrated React.js frontend and React Native mobile app from Figma designs. Used Amazon S3 as CDN. Optimized performance for consistent cross-device UX and mentored junior developers.",
+    stack: ["React Native", "React", "FastAPI", "PostgreSQL", "Redis", "MapBox", "AWS S3"],
+},
+{
+    company: "Linkites",
+    role: "Software Engineer",
+    duration: "Jan 2020 — Dec 2023",
+    location: "Indore, India",
+    description:
+        "Built 3 mobile and 2 web applications using React, React Native, React Native Web, Firebase, and GraphQL. Delivered apps across verticals including media sharing, social networking, event management, and gaming. Specialized in cross-platform UX optimization across devices and screen sizes. Implemented client-specific design features and improved user engagement.",
+    stack: ["React", "React Native", "React Native Web", "Firebase", "GraphQL", "Supabase"],
+},
+{
+    company: "Intelion Systems",
+    role: "Analyst",
+    duration: "Mar 2021 — Sep 2021",
+    location: "India",
+    description:
+        "Designed and executed test plans across web and mobile products. Built automation suites to catch regressions earlier in the release cycle.",
+    stack: ["Selenium", "Postman", "Jest"],
+},
 	],
 
 	about: {
@@ -136,7 +127,7 @@ const INFO = {
 				"SYBA helps & prevent cyber events such as identity theft and ransomware by scanning and monitoring your wifi network, devices connected to that network, and your email addresses and verifying your social media usernames with one user-friendly app.",
 			logo: IMG.syba,
 			linkText: "View Project",
-			link: "https://gzmshows.com",
+			link: "https://syba.io",
 		},
 		{
 			title: "Gen Z Media - Podcast Application",
@@ -147,12 +138,12 @@ const INFO = {
 			link: "https://gzmshows.com",
 		},
 		{
-			title: "Gen Z Media - Podcast Application",
+			title: "WashZone",
 			description:
-				"Gen Z Media Podcast application allows us to stream the best and latest quality audio content. Collection of best podcasts like: The Unexplainable Disappearance of Mars Patel",
-			logo: IMG.gzm,
+				"Wash Zone friendly and experienced team is here to ensure you are happy and drive away in a clean car, guaranteed!",
+			logo: IMG.washzone,
 			linkText: "View Project",
-			link: "https://gzmshows.com",
+			link: "https://washzone.us",
 		},
 		{
 			title: "Gen Z Media - Podcast Application",
@@ -173,12 +164,12 @@ const INFO = {
 		},
 
 		{
-			title: "Wynn - Collaborate AI powered",
+			title: "Onetab.ai",
 			description:
-				"Empowers synchronized product development, data analytics and leveraging collaborative teamwork.",
-			logo: IMG.wynn,
+				"Your always-on AI teammate that supports every role, every department, every day.",
+			logo: IMG.onetab,
 			linkText: "View Project",
-			link: "https://wynn.io",
+			link: "https://onetab.ai",
 		},
 
 		{

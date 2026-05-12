@@ -224,7 +224,7 @@ const Homepage = () => {
 						<Experience />
 					</section>
 
-					{myArticles && myArticles.length > 0 && (
+					{/* {myArticles && myArticles.length > 0 && (
 						<section className="section">
 							<div className="section-header">
 								<div>
@@ -260,7 +260,7 @@ const Homepage = () => {
 								))}
 							</div>
 						</section>
-					)}
+					)} */}
 
 					<div className="page-footer">
 						<Footer />

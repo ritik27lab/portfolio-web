@@ -1,18 +1,154 @@
+/* ── Global box-sizing fix — prevents all overflow issues ── */
+.contact-container *,
+.contact-container *::before,
+.contact-container *::after {
+	box-sizing: border-box;
+}
+
+/* ── Hide logo on contact page ── */
 .contact-logo-container {
 	display: none;
 }
 
-.contact-subtitle {
-	width: 100% !important;
+/* ── Page layout ── */
+.contact-page {
+	width: 100%;
 }
 
 .contact-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	margin-top: 140px;
+	width: 100%;
+	overflow: hidden; /* catches any stray overflow */
 }
 
+/* ── Title block ── */
+.contact-title {
+	width: 100%;
+	font-size: clamp(24px, 4vw, 36px);
+	font-weight: 600;
+}
+
+/* ── Subtitle / description ── */
+.contact-subtitle {
+	width: 100% !important;
+	margin-top: 50px;
+	line-height: 1.8;
+	font-size: clamp(14px, 1.5vw, 16px);
+	color: var(--secondary-color);
+	word-break: break-word;
+}
+
+/* ── Form wrapper ── */
+.contact-us-container {
+	width: 100%;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	overflow: hidden; /* key: stops children from bleeding out */
+}
+
+/* ── Side-by-side Name + Email row ── */
+.input-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	width: 100%;
+}
+
+/* ── Individual field ── */
+.input-group {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 220px;
+	min-width: 0; /* critical — prevents flex children overflowing */
+	width: 100%;
+}
+
+.input-group label {
+	margin-bottom: 10px;
+	font-size: clamp(14px, 1.5vw, 16px);
+	font-weight: 600;
+	color: var(--primary-color);
+}
+
+/* ── Text inputs & textarea ── */
+.rounded-input {
+	width: 100%;
+	max-width: 100%; /* never exceed parent */
+	padding: 14px 16px;
+	border-radius: 14px;
+	border: 1px solid var(--border-subtle);
+	background-color: transparent;
+	font-size: clamp(13px, 1.4vw, 15px);
+	font-family: inherit;
+	color: var(--primary-color);
+	outline: none;
+	transition:
+		border-color 0.3s ease,
+		box-shadow 0.3s ease;
+	box-sizing: border-box;
+}
+
+.rounded-input:focus {
+	border-color: #14b8a6;
+	box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.08);
+}
+
+.rounded-input::placeholder {
+	color: #999;
+}
+
+textarea.rounded-input {
+	resize: vertical;
+	min-height: 130px;
+}
+
+/* ── Validation messages ── */
+.error-text {
+	color: #ef4444;
+	font-size: 13px;
+	margin-top: 4px;
+}
+
+.success-text {
+	color: #10b981;
+	font-size: 14px;
+}
+
+/* ── Send button ── */
+.send-button {
+	align-self: flex-start;
+	width: auto;
+	max-width: 100%;
+	padding: 13px 28px;
+	border: none;
+	border-radius: 12px;
+	background-color: #14b8a6;
+	color: white;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+	transition:
+		transform 0.2s ease,
+		background-color 0.2s ease;
+	box-sizing: border-box;
+}
+
+.send-button:hover {
+	transform: translateY(-2px);
+	background-color: #0f9d8c;
+}
+
+.send-button:disabled {
+	opacity: 0.7;
+	cursor: not-allowed;
+	transform: none;
+}
+
+/* ── Socials strip ── */
 .socials-container {
 	display: flex;
 	flex-direction: column;
@@ -25,10 +161,100 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	flex-wrap: wrap;
+	gap: 12px;
 }
 
+/* ── Inline info link ── */
+.contact-info {
+	margin-top: 10px;
+	font-size: 15px;
+	color: var(--secondary-color);
+}
+
+.contact-info a {
+	color: #14b8a6;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+/* ── Tablet (≤ 900px) ── */
+@media (max-width: 900px) {
+	.contact-container {
+		margin-top: 130px;
+	}
+}
+
+/* ── Small tablet / large phone (≤ 768px) ── */
+@media (max-width: 768px) {
+	.contact-container {
+		margin-top: 100px;
+	}
+
+	.input-row {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.input-group {
+		flex: 1 1 100%;
+		width: 100%;
+	}
+
+	.contact-subtitle {
+		margin-top: 36px;
+		font-size: 15px;
+		line-height: 1.7;
+	}
+
+	.rounded-input {
+		padding: 13px 14px;
+		font-size: 14px;
+	}
+
+	.socials-container {
+		margin-top: 48px;
+		padding-top: 32px;
+	}
+}
+
+/* ── Mobile (≤ 600px) ── */
 @media (max-width: 600px) {
 	.contact-container {
-		margin-top: 110px;
+		margin-top: 80px;
+	}
+
+	.contact-us-container {
+		margin-top: 28px;
+		gap: 20px;
+	}
+
+	.send-button {
+		align-self: stretch;
+		width: 100%;
+		text-align: center;
+	}
+
+	.contact-subtitle {
+		margin-top: 28px;
+		font-size: 14px;
+	}
+}
+
+/* ── Very small phones (≤ 380px) ── */
+@media (max-width: 380px) {
+	.contact-container {
+		margin-top: 70px;
+	}
+
+	.rounded-input {
+		padding: 12px;
+		border-radius: 10px;
+		font-size: 13px;
+	}
+
+	.send-button {
+		padding: 12px 20px;
+		font-size: 14px;
 	}
 }
