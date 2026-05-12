@@ -60,7 +60,7 @@ const Projects = () => {
 						</div>
 					</div>
 					<div className="page-footer">
-						, <Footer />
+						<Footer />
 					</div>
 				</div>
 			</div>

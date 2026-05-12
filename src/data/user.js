@@ -145,14 +145,14 @@ const INFO = {
 			linkText: "View Project",
 			link: "https://washzone.us",
 		},
-		{
-			title: "Gen Z Media - Podcast Application",
-			description:
-				"Gen Z Media Podcast application allows us to stream the best and latest quality audio content. Collection of best podcasts like: The Unexplainable Disappearance of Mars Patel",
-			logo: IMG.gzm,
-			linkText: "View Project",
-			link: "https://gzmshows.com",
-		},
+		// {
+		// 	title: "Gen Z Media - Podcast Application",
+		// 	description:
+		// 		"Gen Z Media Podcast application allows us to stream the best and latest quality audio content. Collection of best podcasts like: The Unexplainable Disappearance of Mars Patel",
+		// 	logo: IMG.gzm,
+		// 	linkText: "View Project",
+		// 	link: "https://gzmshows.com",
+		// },
 
 		{
 			title: "Retirely - Financial Advisory",

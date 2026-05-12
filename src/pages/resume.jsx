@@ -67,7 +67,7 @@ const Resume = () => {
 									target="_blank"
 									rel="noreferrer"
 								>
-									↓ Download PDF
+									↓ Download Resume
 								</a>
 							</div>
 
